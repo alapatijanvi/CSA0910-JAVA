@@ -1,0 +1,13 @@
+ public class SquareRoot {
+    public static void main(String[] args) {
+        int n = 64;
+        int root = (int) Math.sqrt(n);
+
+        if (root * root == n) {
+            System.out.println("Positive Root = " + root);
+            System.out.println("Negative Root = " + (-root));
+        } else {
+            System.out.println("Not a Perfect Square");
+        }
+    }
+}
