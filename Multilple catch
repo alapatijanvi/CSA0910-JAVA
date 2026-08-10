@@ -1,0 +1,24 @@
+import java.util.*;
+class MultipleCatch {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter a number: ");
+            int a = sc.nextInt();
+            System.out.print("Enter another number: ");
+            int b = sc.nextInt();
+            System.out.println("Result = " + (a / b));
+            int arr[] = {10, 20, 30};
+            System.out.println(arr[5]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index is invalid");
+        }
+        catch (Exception e) {
+            System.out.println("Some error occurred");
+        }
+    }
+}
